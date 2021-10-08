@@ -32,14 +32,14 @@ public class App {
         get("/hello", (req, res) -> {
             System.out.println("Request: " + req.queryParams("nombre") + " " + req.queryParams("password"));
             String msj;
-            if (req.queryParams("nombre").equals("Andre"))
+            if (req.queryParams("nombre").equals("Yare"))
                 msj = "Bienvenido!";
             else
-                msj = "Usuario equivocado";
+                msj = "Usuario no existe ";
             return "Hola get " + msj + " " + "<a href='//127.0.0.1:5500/Formulario.html'>regresar</a>";
         });
 
-        get("/Andre", (req, res) -> "Andre");
+        get("/Yare", (req, res) -> "Yare");
 
         post("/hello", (req, res) -> {
             System.out.println("Request: " + req.queryParams("nombre") + " " + req.queryParams("password"));
@@ -62,7 +62,7 @@ public class App {
             JsonObject peticion = arbol.getAsJsonObject();
 
             Object nombre =  peticion.get("nombre") ;
-            if (rq.queryParams("nombre").equals("andre"))
+            if (rq.queryParams("nombre").equals("yare"))
             msj = "Bienvenido!";
             else
             msj = "Usuario equivocado";
