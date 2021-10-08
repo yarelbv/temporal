@@ -13,12 +13,11 @@ class Display {
             restar: '-', 
         }
     }
-
+    
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0,-1);
         this.imprimirValores();
     }
-
     borrarTodo() {
         this.valorActual = '';
         this.valorAnterior = '';
