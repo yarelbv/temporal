@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <!-- Se hace uso del los metodos GET y POST para enviar informacion del formulario -->
+    <!-- Action establece quien va a procesar la peticion de datos -->
+    <form action="javascript.html" method="GET">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><label form="nom" class="">Nombre:</label>   <input name="nom" id="nom" type="text"class="form-control" placeholder="Escribe tu nombre"></div>
+                <div class="col-6"><label form="dic" class="">Dirección:</label> <input name="dic" id="dic" type="text"class="form-control"></div>
+                <div class="col-6"><label form="tel" class="">Teléfono:</label>  <input name="dic" id="tel" type="password"class="form-control"></div>
+                <!-- El uso del imput de tipo submit realiza el envio de los datos del formulario a donde apunte el action -->
+                <input type="submit" value="Enviar">
+                <!-- Solo realiza el cambio de pagina pero no realiza el envio de los datos -->
+                <a href="ejemplo2.html" class="btn btn-danger">Enviar</a>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
